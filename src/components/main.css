@@ -1,0 +1,40 @@
+.s-combo {
+    @apply flex flex-col-reverse
+}
+.s-input {
+    @apply px-4 py-2 rounded-xl duration-300 w-full text-white
+    focus:outline-none focus:ring-2
+}
+.s-label {
+    @apply  mb-2
+}
+[data-theme=halloween] .s-pro {
+    background-image: repeating-linear-gradient(-45deg,#262626,#262626 .2rem,hsl(0deg 0% 0% / 0%) 0,hsl(0deg 0% 0% / 0%) .4rem)
+}
+.s-card {
+    @apply card w-full bg-base-100 shadow-lg p-5 rounded-md h-fit
+}
+.s-menu {
+    @apply p-2 hover:bg-base-300 text-xl
+}
+.s-grid {
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr))
+}
+.s-grid-lg {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr))
+}
+.s-underline {
+    @apply underline decoration-info decoration-4 underline-offset-4
+}
+body {
+    @apply m-0 bg-base-100 font-sans text-base antialiased font-normal
+}
+.s-table {
+    overflow-y: scroll;
+}
+.s-table::-webkit-scrollbar {
+    width: 8px;
+}
+.s-margin {
+    transition: margin-left .75s ease-in-out;
+}
